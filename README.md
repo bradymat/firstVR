@@ -1,6 +1,6 @@
-## aframe-react-boilerplate
+## A-frame attempt 1
 
-Boilerplate for building virtual reality experiences with
+Virtual reality built with
 [A-Frame](https://aframe.io) and React using
 [aframe-react](https://github.com/ngokevin/aframe-react).
 
