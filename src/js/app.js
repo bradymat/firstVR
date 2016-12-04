@@ -2,9 +2,9 @@ import 'aframe';
 import 'aframe-animation-component';
 import 'aframe-text-component';
 import 'babel-polyfill';
-import {Entity, Scene} from 'aframe-react';
+import { Entity, Scene } from 'aframe-react';
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 
 import Camera from './components/Camera';
 import Text from './components/Text';
@@ -40,7 +40,7 @@ class VRScene extends React.Component {
           color='white'
           position='-1.75 1 -3'/>
 
-        <Entity light={{type: 'ambient', color: '#888'}}/>
+        <Entity light={{type: 'ambient', color: '#ffffe0'}}/>
         <Entity light={{type: 'directional', intensity: 0.5}} position='-1 1 0'/>
         <Entity light={{type: 'directional', intensity: 1}} position='1 1 0'/>
 
@@ -61,4 +61,4 @@ class VRScene extends React.Component {
   }
 }
 
-ReactDOM.render(<VRScene/>, document.querySelector('.scene-container'));
+render(<VRScene/>, document.querySelector('.scene-container'));
